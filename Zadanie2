@@ -1,0 +1,73 @@
+//Main
+
+public class Main
+
+{
+    public static void main(String[] args)
+    {
+           Bank_A bank_A = new Bank_A();
+                 bank_A.getBalance();
+                      bank_A.AcountState("ING Bank Śląski");
+             Bank_B bank_B = new Bank_B();
+        bank_B.getBalance();
+                     bank_B.AcountState("mBank");
+               Bank_C bank_C = new Bank_3();
+              bank_C.getBalance();
+        bank_C.AcountState("Millennium Bank");
+    }
+}
+
+-----------------------------------------------------------------
+
+//Bank
+
+abstract class Bank
+
+{
+        abstract String getBalance();
+           public void AcountState(String Bank)
+    {
+                System.out.println (Bank + "Twoje saldo " + getBalance ());
+    }
+}
+
+-----------------------------------------------------------------
+
+//BankA
+
+public class Bank_A extends Bank
+
+{
+         String getBalance()
+    {
+            return " 100 USD ";
+    }
+}
+
+------------------------------------------------------------------
+
+//BankB
+
+public class Bank_B extends Bank
+
+{
+      String getBalance()
+    {
+            return " 150 USD ";
+    }
+}
+
+------------------------------------------------------------------
+
+//BankC
+
+public class Bank_C extends Bank
+
+{
+          String getBalance()
+    {
+           return " 200 USD ";
+    }
+}
+
+------------------------------------------------------------------
