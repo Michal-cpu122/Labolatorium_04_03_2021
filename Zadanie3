@@ -1,0 +1,50 @@
+//Main
+
+public class Abstraction {
+    public static void main(String[] args) {
+        Cats cat = new Cats();
+        cat.cats();
+        cat.dogs();
+        cat.eat();
+
+        Dogs dog = new Dogs();
+        dog.cats();
+        dog.dogs();
+        dog.eat();
+
+    }
+}
+
+---------------------------------------------------
+
+//Animals
+
+abstract class Animals {
+    abstract void cats();
+    abstract void dogs();
+    public void eat() {
+    }
+}
+
+--------------------------------------------------
+
+//Dogs
+
+public class Dogs extends Animals{
+    
+    public void dogs() {
+        System.out.println("Dog barks");
+    }
+}
+
+-----------------------------------------------
+
+//Cats
+
+public class Cats extends Animals{
+    public void cats() {
+        System.out.println("Cats meow");
+    }
+}
+
+-----------------------------------------------
