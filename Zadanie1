@@ -1,0 +1,51 @@
+//Main
+
+public class Main
+{
+      public static void main(String[] args)
+    {
+              Klasa_1 podklasa_1 = new Klasa_1 ();
+                System.out.println (podklasa_1.message ());
+                 Klasa_2 podklasa_2 = new Klasa_2 ();
+         System.out.println (podklasa_B.message ());
+
+    }
+}
+
+------------------------------------------------------------------
+
+//Parent
+
+abstract class Parent
+
+{
+       abstract String message();
+}
+
+------------------------------------------------------------------
+
+//Klasa1
+
+public class Klasa_1 extends Parent
+
+{
+       public String message()
+       {
+        return "Jest to pierwsza podklasa ";
+    }
+}
+
+------------------------------------------------------------------
+
+//klasa2
+
+public class Klasa_2 extends Parent
+
+{
+       public String message()
+       {
+        return "Jest to druga podklasa ";
+    }
+}
+
+------------------------------------------------------------------
